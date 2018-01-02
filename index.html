@@ -1,0 +1,27 @@
+<!doctype html>
+<head>
+  <title>Tabs Tutorial using Vue.js Components</title>
+  <script src="js/vue.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="vue-app">
+    <div class="" id="bag" v-bind:class="{ burst:ended }">
+
+    </div>
+
+    <div class="" id="bag-health">
+      <div  v-bind:style="{width: health + '%'}">
+
+      </div>
+    </div>
+
+    <div class="" id="control">
+      <button v-on:click="punch" v-show="!ended">Punch</button>
+      <button v-on:click="restart">Restart</button>
+    </div>
+	</div>
+	<script src="js/vue.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
